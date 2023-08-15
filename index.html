@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/font-awesome/5.15.4/css/all.min.css">
+  <title>AHOI EXPEDICIONES</title>
+</head>
+<body>
+  <main id="main-content">
+    <header id="main-header">
+      <div class="logo">
+        <img src="img/logo8.png" alt="Logo de la página">
+      </div>
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars" style="color: #ffd43b;"></i>
+        </label>
+        <ul>
+          <li><a class="Active" href="#">Destinos</a></li>
+          <li><a href="#">Actividades</a></li>
+          <li><a href="#">Contactanos</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Reseñas</a></li>
+          <li><a href="#">Sobre nosotros</a></li>
+        </ul>
+      </nav>
+    </header>
+ 
+  </main>
+
+  <section>
+  <div id="parrafo">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fugiat minus rem molestias quo. Nemo possimus
+     <em> asperiores architecto, dignissimos dolorum ad aperiam odio mollitia quam voluptatum </em>
+     labore molestias excepturi!</p>
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fugiat minus rem molestias quo. Nemo possimus
+      <em> asperiores architecto, dignissimos dolorum ad aperiam odio mollitia quam voluptatum </em>
+      labore molestias excepturi!</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fugiat minus rem molestias quo. Nemo possimus
+        <em> asperiores architecto, dignissimos dolorum ad aperiam odio mollitia quam voluptatum </em>
+        labore molestias excepturi!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fugiat minus rem molestias quo. Nemo possimus
+          <em> asperiores architecto, dignissimos dolorum ad aperiam odio mollitia quam voluptatum </em>
+          labore molestias excepturi!</p>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fugiat minus rem molestias quo. Nemo possimus
+            <em> asperiores architecto, dignissimos dolorum ad aperiam odio mollitia quam voluptatum </em>
+            labore molestias excepturi!</p>
+          </div>
+
+  <footer class="pie-pagina">
+    <div class="grupo-1">
+     <div class="logo">
+       <img src="img/logo7.png" alt="EXPEDICIONES AHOI" style="height: 150px; ; width: 300px;">
+     </div>
+     <div class="box">
+         <h2>SOBRE NOSOTROS</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+     </div>
+     <div class="box">
+          <h2>SIGUENOS</h2>
+       <div class="red-social">
+           <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-twitter"></a>
+             <a href="#" class="fab fa-youtube"></a>
+         </div>
+     </div>
+  </div>
+<div class="grupo-2">
+    <small>&copy; 2023 <b>DemberOS</b> - Todos los Derechos Reservados.</small>
+</div>
+</footer>
+</section>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('main-header');
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop === 0) {
+        header.classList.add('at-top');
+      } else {
+        header.classList.remove('at-top');
+      }
+    });
+  </script>
+  
+</body>
+</html>
+

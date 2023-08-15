@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+     <link rel="stylesheet" href="Astyle.css">
+    <title>Actividades</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index2.html"><img src="img/logo8.png" alt=""></a></div>
+        <ul class="links">
+    
+            <li><a href="destinos.html">DESTINOS</a></li>
+            <li><a href="actividades.html">ACTIVIDADES</a></li>
+            <li><a href="contacto.html">CONTACTANOS</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="testimonios.html">RESEÑAS</a></li>
+            <li class="Sobre"><a href="nosotros.html">SOBRE NOSOTROS</a></li>
+        </ul>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars" style="color: #ffd43b;"></i>
+         </div>
+        </div>
+        <div class="frase"></div>
+    
+        <div class="dropdown_menu">
+            <li><a href="destinos.html">DESTINOS</a></li>
+            <li><a href="actividades.html">ACTIVIDADES</a></li>
+            <li><a href="contacto.html">CONTACTANOS</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="testimonios.html">RESEÑAS</a></li>
+            <li><a href="nosotros.html">SOBRE NOSOTROS</a></li>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="actividad">
+            <h2>Escalada en Roca</h2>
+            <img src="img/escalada.jpg" alt="Escalada en Roca">
+            <p>Únete a nosotros para una emocionante aventura de escalada en roca. Nuestros guías expertos te llevarán a través de rutas desafiantes y te brindarán una experiencia inolvidable en la naturaleza.</p>
+            <button>¡Reserva Ahora!</button>
+        </div>
+        
+        <div class="actividad">
+            <h2>Navegación en Velero</h2>
+            <img src="img/velero.jpg" alt="Navegación en Velero">
+            <p>Embárcate en un relajante viaje de navegación en velero por aguas cristalinas. Disfruta del sol y el viento mientras exploras paisajes marinos impresionantes y descubres la belleza del océano.</p>
+            <button>¡Reserva Ahora!</button>
+        </div>
+        <!-- Actividad 3: Senderismo -->
+        <div class="actividad">
+            <h2>Senderismo en la Montaña</h2>
+            <img src="img/senderismo.jpg" alt="Senderismo en la Montaña">
+            <p>Explora la belleza de la naturaleza a través de emocionantes rutas de senderismo en las montañas. Disfruta de vistas panorámicas y la sensación de logro al conquistar alturas.</p>
+            <button>¡Reserva Ahora!</button>
+        </div>
+
+        <!-- Actividad 4: Buceo -->
+        <div class="actividad">
+            <h2>Buceo en Aguas Cristalinas</h2>
+            <img src="img/buceo.jpg" alt="Buceo en Aguas Cristalinas">
+            <p>Sumérgete en un mundo submarino lleno de maravillas. Nuestros instructores certificados te guiarán a través de aguas cristalinas para explorar arrecifes y vida marina diversa.</p>
+            <button>¡Reserva Ahora!</button>
+        </div>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+         <div class="logo">
+           <img src="img/logo7.png" alt="EXPEDICIONES AHOI" style="height: 150px; ; width: 300px;">
+         </div>
+         <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+           <p>Sumérgete en un mundo de emociones y adrenalina con nuetra empresa, tu compañero definitivo en la búsqueda de experiencias únicas y emocionantes.
+              Desde montañas hasta ríos y te invitamos a un viaje inolvidable lleno de desafíos, descubrimientos y conexión con la naturaleza.</p>
+        </div>
+         <div class="box">
+              <h2>SIGUENOS</h2>
+           <div class="red-social">
+               <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#" class="fab fa-instagram"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                 <a href="#" class="fab fa-youtube"></a>
+             </div>
+         </div>
+      </div>
+    <div class="grupo-2">
+        <small>&copy; 2023 <b>Joel Daniel de Jesús estrella 
+            19-eiss-3-002</b> - Todos los Derechos Reservados.</small>
+    </div>
+    </footer>     
+    <style>
+        #back-to-top {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          cursor: pointer;
+          z-index: 9999;
+          height: 40px;
+        }
+      </style>
+      <div id="back-to-top" onclick="scrollToTop()">
+        <img src="img/Uppage.png" alt="Volver arriba">
+      </div>
+
+      <script>
+        // Función para desplazarse suavemente hacia arriba
+        function scrollToTop() {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        }
+      
+        // Mostrar u ocultar el botón basado en la posición de desplazamiento
+        window.addEventListener("scroll", function() {
+          var backToTopButton = document.getElementById("back-to-top");
+          if (window.pageYOffset > 300) { // Cambia esta valor según tu preferencia
+            backToTopButton.style.display = "block";
+          } else {
+            backToTopButton.style.display = "none";
+          }
+        });
+      </script>
+    <script>
+        
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script> 
+</body>
+</html>
